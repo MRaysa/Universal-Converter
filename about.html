@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weight Converter - Universal Converter</title>
+    <title>About - Universal Converter</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- DaisyUI CDN -->
@@ -87,9 +87,9 @@
                         <ul tabindex="0"
                             class="menu menu-sm dropdown-content bg-white rounded-box z-[1] mt-3 w-52 p-2 shadow">
                             <li><a href="index.html" class="text-gray-800 hover:bg-blue-100">Home</a></li>
-                            <li><a href="./converters.html" class="text-gray-800 hover:bg-blue-100">Converters</a></li>
-                            <li><a href="./about.html" class="text-gray-800 hover:bg-blue-100">About</a></li>
-                            <li><a href="./contact.html" class="text-gray-800 hover:bg-blue-100">Contact</a></li>
+                            <li><a href="converters.html" class="text-gray-800 hover:bg-blue-100">Converters</a></li>
+                            <li><a href="about.html" class="text-gray-800 hover:bg-blue-100">About</a></li>
+                            <li><a href="contact.html" class="text-gray-800 hover:bg-blue-100">Contact</a></li>
                         </ul>
                     </div>
                 </div>
@@ -98,64 +98,53 @@
                 <div class="hidden md:flex items-center space-x-1">
                     <a href="index.html"
                         class="py-4 px-2 text-gray-800 font-semibold hover:text-blue-500 transition duration-300">Home</a>
-                    <a href="./converters.html"
+                    <a href="converters.html"
                         class="py-4 px-2 text-gray-800 font-semibold hover:text-blue-500 transition duration-300">Converters</a>
-                    <a href="./about.html"
+                    <a href="about.html"
                         class="py-4 px-2 text-gray-800 font-semibold hover:text-blue-500 transition duration-300">About</a>
-                    <a href="./contact.html"
+                    <a href="contact.html"
                         class="py-4 px-2 text-gray-800 font-semibold hover:text-blue-500 transition duration-300">Contact</a>
                 </div>
             </div>
         </div>
     </nav>
 
-    <!-- Weight Converter Section -->
+    <!-- About Section -->
     <section class="container mx-auto px-6 py-10">
         <div class="text-center">
-            <h1 class="text-4xl font-bold text-gray-800 mb-4">⚖️ Weight Converter</h1>
-            <p class="text-gray-600 mb-8">Convert between kilograms, pounds, ounces, and grams.</p>
+            <h1 class="text-4xl font-bold text-gray-800 mb-4">About Universal Converter</h1>
+            <p class="text-gray-600 mb-8">Learn more about our mission and the tools we provide.</p>
         </div>
 
-        <!-- Converter Form -->
-        <div class="bg-white p-6 rounded-lg shadow-lg max-w-2xl mx-auto">
-            <form id="weight-converter-form">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div>
-                        <label for="from-unit" class="block text-gray-700 font-semibold mb-2">From:</label>
-                        <select id="from-unit"
-                            class="w-full p-3 rounded-lg border-2 border-gray-300 focus:outline-none focus:border-blue-500">
-                            <option value="kilograms">Kilograms</option>
-                            <option value="pounds">Pounds</option>
-                            <option value="ounces">Ounces</option>
-                            <option value="grams">Grams</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label for="to-unit" class="block text-gray-700 font-semibold mb-2">To:</label>
-                        <select id="to-unit"
-                            class="w-full p-3 rounded-lg border-2 border-gray-300 focus:outline-none focus:border-blue-500">
-                            <option value="kilograms">Kilograms</option>
-                            <option value="pounds">Pounds</option>
-                            <option value="ounces">Ounces</option>
-                            <option value="grams">Grams</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="mt-4">
-                    <label for="input-value" class="block text-gray-700 font-semibold mb-2">Value:</label>
-                    <input type="number" id="input-value"
-                        class="w-full p-3 rounded-lg border-2 border-gray-300 focus:outline-none focus:border-blue-500"
-                        placeholder="Enter value...">
-                </div>
-                <div class="mt-6">
-                    <button type="submit" class="cute-button w-full p-3 rounded-lg">Convert</button>
-                </div>
-            </form>
+        <div class="max-w-2xl mx-auto bg-white p-6 rounded-lg shadow-lg">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">Our Mission</h2>
+            <p class="text-gray-600 mb-4">
+                At Universal Converter, our mission is to make unit conversion simple, fast, and accessible for
+                everyone.
+                Whether you're a student, professional, or just someone who loves learning, we provide tools to convert
+                between various units with ease.
+            </p>
 
-            <!-- Result Display -->
-            <div id="result" class="mt-6 text-center text-gray-800 font-semibold text-xl">
-                <!-- Result will be displayed here -->
-            </div>
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">What We Offer</h2>
+            <p class="text-gray-600 mb-4">
+                We offer a wide range of converters, including length, temperature, weight, currency, time, volume,
+                speed, and area. Our tools are designed to be user-friendly and accurate, ensuring you get the results
+                you need in no time.
+            </p>
+
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">Why Choose Us?</h2>
+            <ul class="list-disc list-inside text-gray-600 mb-4">
+                <li>Simple and intuitive interface</li>
+                <li>Accurate and reliable conversions</li>
+                <li>Supports a wide range of units</li>
+                <li>Free to use for everyone</li>
+            </ul>
+
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">Meet the Developer</h2>
+            <p class="text-gray-600 mb-4">
+                Universal Converter is developed with ❤️ by <span class="font-semibold">Mst. Aysa Siddika Meem</span>.
+                Our goal is to make your life easier by providing tools that simplify everyday tasks.
+            </p>
         </div>
     </section>
 
@@ -192,40 +181,6 @@
             </div>
         </div>
     </footer>
-
-    <!-- JavaScript for Conversion Logic -->
-    <!-- <script>
-        // Conversion factors (relative to kilograms)
-        const conversionFactors = {
-            kilograms: 1,
-            pounds: 2.20462,
-            ounces: 35.274,
-            grams: 1000,
-        };
-
-        // Convert function
-        document.getElementById('weight-converter-form').addEventListener('submit', function (event) {
-            event.preventDefault();
-
-            const fromUnit = document.getElementById('from-unit').value;
-            const toUnit = document.getElementById('to-unit').value;
-            const inputValue = parseFloat(document.getElementById('input-value').value);
-
-            if (isNaN(inputValue)) {
-                document.getElementById('result').innerText = "Please enter a valid number!";
-                return;
-            }
-
-            // Convert input value to kilograms first
-            const valueInKilograms = inputValue / conversionFactors[fromUnit];
-            // Convert kilograms to the target unit
-            const convertedValue = valueInKilograms * conversionFactors[toUnit];
-
-            // Display result
-            document.getElementById('result').innerText = `${inputValue} ${fromUnit} = ${convertedValue.toFixed(4)} ${toUnit}`;
-        });
-    </script> -->
-    <script src="./js/weight-converter.js"></script>
 </body>
 
 </html>
