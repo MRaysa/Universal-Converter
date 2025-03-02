@@ -1,57 +1,50 @@
-# Universal Converter
+# Universal Converter  
 
-![Logo](./assets/logo.png)
+![Logo](./assets/logo.png)  
 
-**Universal Converter** is a comprehensive web-based tool designed to simplify unit conversions across a wide range of categories. Whether you're converting length, temperature, currency, or data transfer rates, this tool provides fast, accurate, and user-friendly conversions. Built with modern web technologies, it is fully responsive and works seamlessly across all devices.
+**Universal Converter** is a web-based unit conversion tool designed for efficiency and accuracy. Whether it's length, temperature, currency, or data transfer rates, this tool provides real-time, precise conversions with a seamless user experience. Built using modern web technologies, it is optimized for all devices.  
 
-👉 **Live Demo**: [https://universal-converter-three.vercel.app/](https://universal-converter-three.vercel.app/)
+🔗 **Live Demo**: [Universal Converter](https://universal-converter-three.vercel.app/)  
 
----
+## 🚀 Features  
 
-## Features
+- ✅ **Multi-Category Support** – Convert length, temperature, weight, currency, time, volume, speed, area, digital storage, energy, and more.  
+- 🎨 **Intuitive UI/UX** – Clean, minimal, and easy-to-use interface.  
+- ⚡ **Real-Time Conversion** – Instant results with dynamic updates.  
+- 📱 **Responsive Design** – Works flawlessly on desktops, tablets, and mobile devices.  
+- 💻 **Open Source** – Free to use, modify, and contribute to.  
 
-- **Wide Range of Converters**: Supports conversions for length, temperature, weight, currency, time, volume, speed, area, data transfer rate, digital storage, energy, frequency, fuel economy, mass, plane angle, and pressure.
-- **Intuitive Interface**: Clean and easy-to-navigate design for a seamless user experience.
-- **Real-Time Results**: Instantly displays converted values as you input data.
-- **Responsive Design**: Optimized for desktop, tablet, and mobile devices.
-- **Open Source**: Free to use, modify, and contribute to.
+## 🔢 Supported Conversions  
 
----
+- **Length** → Meters, kilometers, miles, feet, etc.  
+- **Temperature** → Celsius, Fahrenheit, Kelvin.  
+- **Weight** → Kilograms, pounds, ounces, grams.  
+- **Currency** → USD, EUR, GBP, JPY, and more.  
+- **Time** → Seconds, minutes, hours, days, etc.  
+- **Volume** → Liters, milliliters, gallons, etc.  
+- **Speed** → km/h, mph, m/s, knots.  
+- **Area** → Square meters, square feet, acres, etc.  
+- **Data Transfer Rate** → Bits per second, kilobits per second, etc.  
+- **Digital Storage** → Bytes, kilobytes, megabytes, etc.  
+- **Energy** → Joules, calories, kilowatt-hours, etc.  
+- **Frequency** → Hertz, kilohertz, megahertz, etc.  
+- **Fuel Economy** → Miles per gallon, kilometers per liter, etc.  
+- **Mass** → Kilograms, grams, pounds, ounces, etc.  
+- **Plane Angle** → Degrees, radians, gradians.  
+- **Pressure** → Pascals, bars, atmospheres, etc.  
 
-## Available Converters
+## ⚙️ Getting Started  
 
-1. **Length**: Meters, kilometers, miles, feet, etc.
-2. **Temperature**: Celsius, Fahrenheit, Kelvin.
-3. **Weight**: Kilograms, pounds, ounces, grams.
-4. **Currency**: USD, EUR, GBP, JPY, and more.
-5. **Time**: Seconds, minutes, hours, days, etc.
-6. **Volume**: Liters, milliliters, gallons, etc.
-7. **Speed**: km/h, mph, m/s, knots.
-8. **Area**: Square meters, square feet, acres, etc.
-9. **Data Transfer Rate**: Bits per second, kilobits per second, etc.
-10. **Digital Storage**: Bytes, kilobytes, megabytes, etc.
-11. **Energy**: Joules, calories, kilowatt-hours, etc.
-12. **Frequency**: Hertz, kilohertz, megahertz, etc.
-13. **Fuel Economy**: Miles per gallon, kilometers per liter, etc.
-14. **Mass**: Kilograms, grams, pounds, ounces, etc.
-15. **Plane Angle**: Degrees, radians, gradians.
-16. **Pressure**: Pascals, bars, atmospheres, etc.
+### 📌 How to Use  
 
----
+1. Open [Universal Converter](https://universal-converter-three.vercel.app/).  
+2. Choose the conversion category.  
+3. Input a value and select units.  
+4. Get instant results.  
 
-## How to Use
+### 🛠️ Installation & Setup  
 
-1. Visit the [Universal Converter](https://universal-converter-three.vercel.app/).
-2. Select the type of conversion you need from the available converters.
-3. Enter the value you want to convert and choose the input and output units.
-4. View the converted result instantly.
-
----
-
-## Installation
-
-To run this project locally, follow these steps:
-
-1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/MRaysa/Universal-Converter.git
+#### Clone the Repository  
+```sh
+git clone https://github.com/MRaysa/Universal-Converter.git
+cd Universal-Converter
