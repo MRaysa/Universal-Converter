@@ -4,9 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Volume Converter</title>
+    <title>Volume Converter - Universal Converter</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- DaisyUI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.9/daisyui.css" rel="stylesheet" type="text/css" />
     <!-- Google Font Poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,8 +19,18 @@
     <script src="https://kit.fontawesome.com/6f086dc852.js" crossorigin="anonymous"></script>
     <style>
         body {
-            font-family: "Poppins", sans-serif;
+            transition: background-color 0.5s ease-in-out;
             background-color: #f9fafb;
+            font-family: "Poppins", sans-serif;
+        }
+
+        .cute-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .cute-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
         }
 
         .cute-button {
@@ -30,6 +42,19 @@
         .cute-button:hover {
             transform: scale(1.05);
             box-shadow: 0 5px 15px rgba(59, 130, 246, 0.4);
+        }
+
+        .cute-nav {
+            background: linear-gradient(135deg, #6EE7B7, #3B82F6);
+        }
+
+        .cute-nav a {
+            color: white;
+            transition: color 0.3s ease;
+        }
+
+        .cute-nav a:hover {
+            color: #FFD700;
         }
     </style>
 </head>
@@ -84,46 +109,53 @@
         </div>
     </nav>
 
-    <!-- Volume Converter UI -->
+    <!-- Volume Converter Section -->
     <section class="container mx-auto px-6 py-10">
-        <div class="text-center mb-8">
-            <h1 class="text-4xl font-bold text-gray-800 mb-2">🧴 Volume Converter</h1>
-            <p class="text-gray-600">Convert between liters, milliliters, gallons, and cubic meters.</p>
+        <div class="text-center">
+            <h1 class="text-4xl font-bold text-gray-800 mb-4">🧴 Volume Converter</h1>
+            <p class="text-gray-600 mb-8">Convert between liters, milliliters, gallons, and cubic meters.</p>
         </div>
-        <div class="max-w-md mx-auto bg-white p-6 rounded-lg shadow-lg">
-            <!-- Input Field -->
-            <div class="mb-4">
-                <label for="inputValue" class="block text-gray-700 font-semibold mb-2">Enter Value:</label>
-                <input type="number" id="inputValue"
-                    class="w-full p-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-blue-500"
-                    placeholder="e.g., 100">
-            </div>
-            <!-- From Unit Dropdown -->
-            <div class="mb-4">
-                <label for="fromUnit" class="block text-gray-700 font-semibold mb-2">From Unit:</label>
-                <select id="fromUnit"
-                    class="w-full p-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-blue-500">
-                    <option value="liters">Liters</option>
-                    <option value="milliliters">Milliliters</option>
-                    <option value="gallons">Gallons</option>
-                    <option value="cubicMeters">Cubic Meters</option>
-                </select>
-            </div>
-            <!-- To Unit Dropdown -->
-            <div class="mb-4">
-                <label for="toUnit" class="block text-gray-700 font-semibold mb-2">To Unit:</label>
-                <select id="toUnit"
-                    class="w-full p-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-blue-500">
-                    <option value="liters">Liters</option>
-                    <option value="milliliters">Milliliters</option>
-                    <option value="gallons">Gallons</option>
-                    <option value="cubicMeters">Cubic Meters</option>
-                </select>
-            </div>
-            <!-- Convert Button -->
-            <button id="convertButton" class="cute-button w-full p-3 rounded-lg">Convert</button>
+
+        <!-- Converter Form -->
+        <div class="bg-white p-6 rounded-lg shadow-lg max-w-2xl mx-auto">
+            <form id="volume-converter-form">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <label for="from-unit" class="block text-gray-700 font-semibold mb-2">From:</label>
+                        <select id="from-unit"
+                            class="w-full p-3 rounded-lg border-2 border-gray-300 focus:outline-none focus:border-blue-500">
+                            <option value="liters">Liters</option>
+                            <option value="milliliters">Milliliters</option>
+                            <option value="gallons">Gallons</option>
+                            <option value="cubicMeters">Cubic Meters</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="to-unit" class="block text-gray-700 font-semibold mb-2">To:</label>
+                        <select id="to-unit"
+                            class="w-full p-3 rounded-lg border-2 border-gray-300 focus:outline-none focus:border-blue-500">
+                            <option value="liters">Liters</option>
+                            <option value="milliliters">Milliliters</option>
+                            <option value="gallons">Gallons</option>
+                            <option value="cubicMeters">Cubic Meters</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="mt-4">
+                    <label for="input-value" class="block text-gray-700 font-semibold mb-2">Value:</label>
+                    <input type="number" id="input-value"
+                        class="w-full p-3 rounded-lg border-2 border-gray-300 focus:outline-none focus:border-blue-500"
+                        placeholder="Enter value...">
+                </div>
+                <div class="mt-6">
+                    <button type="submit" class="cute-button w-full p-3 rounded-lg">Convert</button>
+                </div>
+            </form>
+
             <!-- Result Display -->
-            <div id="result" class="mt-6 text-center text-gray-800 font-semibold text-xl"></div>
+            <div id="result" class="mt-6 text-center text-gray-800 font-semibold text-xl">
+                <!-- Result will be displayed here -->
+            </div>
         </div>
     </section>
 
@@ -172,13 +204,15 @@
         };
 
         // Convert function
-        function convertVolume() {
-            const inputValue = parseFloat(document.getElementById("inputValue").value);
-            const fromUnit = document.getElementById("fromUnit").value;
-            const toUnit = document.getElementById("toUnit").value;
+        document.getElementById('volume-converter-form').addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            const fromUnit = document.getElementById('from-unit').value;
+            const toUnit = document.getElementById('to-unit').value;
+            const inputValue = parseFloat(document.getElementById('input-value').value);
 
             if (isNaN(inputValue)) {
-                document.getElementById("result").textContent = "Please enter a valid number!";
+                document.getElementById('result').innerText = "Please enter a valid number!";
                 return;
             }
 
@@ -188,11 +222,8 @@
             const convertedValue = valueInLiters * conversionFactors[toUnit];
 
             // Display result
-            document.getElementById("result").textContent = `${inputValue} ${fromUnit} = ${convertedValue.toFixed(4)} ${toUnit}`;
-        }
-
-        // Add event listener to the convert button
-        document.getElementById("convertButton").addEventListener("click", convertVolume);
+            document.getElementById('result').innerText = `${inputValue} ${fromUnit} = ${convertedValue.toFixed(4)} ${toUnit}`;
+        });
     </script>
 </body>
 
