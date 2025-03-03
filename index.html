@@ -110,7 +110,7 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Hero Section
     <section class="bg-gradient-to-r from-blue-50 to-green-50 py-20">
         <div class="container mx-auto px-6 text-center">
             <h1 class="text-4xl font-bold text-gray-800 mb-2">Universal Converter</h1>
@@ -119,6 +119,39 @@
                 <input type="text" id="hero-input"
                     class="w-1/2 p-3 rounded-l-lg border-2 border-gray-300 focus:outline-none focus:border-blue-500"
                     placeholder="Enter value to convert...">
+                <button id="hero-convert-button" class="cute-button p-3 rounded-r-lg">Convert</button>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-blue-50 to-green-50 py-20">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl font-bold text-gray-800 mb-2">Universal Converter</h1>
+            <p class="text-gray-600 mb-8">Convert almost anything with ease! 🎉</p>
+            <div class="flex justify-center">
+                <!-- Dropdown Menu for Converter Selection -->
+                <select id="converter-select"
+                    class="w-1/2 p-3 rounded-l-lg border-2 border-gray-300 focus:outline-none focus:border-blue-500">
+                    <option value="" disabled selected>Select a converter...</option>
+                    <option value="length-converter.html">Length Converter</option>
+                    <option value="temperature-converter.html">Temperature Converter</option>
+                    <option value="weight-converter.html">Weight Converter</option>
+                    <option value="currency-converter.html">Currency Converter</option>
+                    <option value="time-converter.html">Time Converter</option>
+                    <option value="volume-converter.html">Volume Converter</option>
+                    <option value="speed-converter.html">Speed Converter</option>
+                    <option value="area-converter.html">Area Converter</option>
+                    <option value="data-transfer-rate-converter.html">Data Transfer Rate Converter</option>
+                    <option value="digital-storage-converter.html">Digital Storage Converter</option>
+                    <option value="energy-converter.html">Energy Converter</option>
+                    <option value="frequency-converter.html">Frequency Converter</option>
+                    <option value="fuel-economy-converter.html">Fuel Economy Converter</option>
+                    <option value="mass-converter.html">Mass Converter</option>
+                    <option value="plane-angle-converter.html">Plane Angle Converter</option>
+                    <option value="pressure-converter.html">Pressure Converter</option>
+                </select>
+                <!-- Convert Button -->
                 <button id="hero-convert-button" class="cute-button p-3 rounded-r-lg">Convert</button>
             </div>
         </div>
@@ -326,6 +359,18 @@
                 window.location.href = redirectPage;
             } else {
                 alert("Please enter a valid keyword (e.g., length, temperature, weight, currency, etc.).");
+            }
+        });
+    </script>
+    <!-- JavaScript to Handle Navigation -->
+    <script>
+        document.getElementById('hero-convert-button').addEventListener('click', function () {
+            const selectedConverter = document.getElementById('converter-select').value;
+
+            if (selectedConverter) {
+                window.location.href = selectedConverter;
+            } else {
+                alert("Please select a converter from the dropdown menu.");
             }
         });
     </script>
