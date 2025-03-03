@@ -16,6 +16,7 @@ document
     const toUnit = document.getElementById("to-unit").value;
     const inputValue = parseFloat(document.getElementById("input-value").value);
 
+    // Check if the input value is a valid number
     if (isNaN(inputValue)) {
       document.getElementById("result").innerText =
         "Please enter a valid number!";
@@ -23,11 +24,11 @@ document
     }
 
     // Convert input value to square meters first
-    const valueInSquareMeters = inputValue / conversionFactors[fromUnit];
+    const valueInSquareMeters = inputValue * conversionFactors[fromUnit];
     // Convert square meters to the target unit
-    const convertedValue = valueInSquareMeters * conversionFactors[toUnit];
+    const convertedValue = valueInSquareMeters / conversionFactors[toUnit];
 
-    // Display result
+    // Display result with up to 4 decimal places
     document.getElementById(
       "result"
     ).innerText = `Result: ${convertedValue.toFixed(4)} ${toUnit}`;
